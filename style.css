@@ -47,7 +47,6 @@ header {
 .card {
     background-color: rgb(255, 255, 255);
     width: 30%;
-    min-height: 400px;
     position: relative;
     padding: 15px;
     box-shadow: 3px 3px 2px #A0672F;
@@ -78,4 +77,24 @@ header {
 /* PARTE HOVER */
 .card:hover .pin {
     display: none;
+}
+
+/* MEDIA QUERY SCHERMO TABLET */
+@media screen and (max-width: 789px) { 
+    .card {
+        width: 35%;
+    }
+
+    .main-row {
+        width: 100%;
+    }
+}
+
+/* MEDIA QUERY SCHERMO MOBILE */
+@media screen and (max-width: 506px) { 
+  .card {
+        width: 50%;
+    }
+
+
 }
