@@ -5,3 +5,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* CSS REGOLE GENERALI */
+body {
+    background-image: url(./img/cork.png);
+}
+
+h1 {
+    font-family:"Edu TAS Beginner", cursive;
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* HEADER */
+header {
+    background-image: url(./img/wall.png);
+    height: 110px;
+}
