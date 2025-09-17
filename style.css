@@ -60,12 +60,12 @@ header {
     width: 30px;
 }
 
-#img-date {
+.img-date {
     font-family:"Sometype Mono", monospace;
     color: grey;
 }
 
-#img-title {
+.img-title {
     font-family:"Edu TAS Beginner", cursive;
     font-weight: bold;
     font-size: 1.5rem;

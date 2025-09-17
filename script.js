@@ -24,8 +24,8 @@ postsString += `
                         <figure>
                             <img src="${post.url}" alt="blog image" class="image"> 
                             <figcaption>
-                                <span id="img-date">${post.date}</span>
-                                <span id="img-title">${post.title}</span>
+                                <span class="img-date">${post.date}</span>
+                                <span class="img-title">${post.title}</span>
                             </figcaption>
                         </figure>
                     </div>
