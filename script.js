@@ -1,5 +1,5 @@
 //selezione degli elementi di output
-const output = document.querySelector(".main-row");
+const output = document.querySelector(".cards-container");
 //console.log(output);
 
 //setto variabile dell'endpoint
@@ -19,18 +19,17 @@ posts.forEach(post => {
 console.log(post);
 
 postsString += `
-                    <div class="card">
-                        <img src="./img/pin.svg" alt="pin image" class="pin">
-                        <figure>
-                            <img src="${post.url}" alt="blog image" class="image"> 
-                            <figcaption>
-                                <span class="img-date">${post.date}</span>
-                                <span class="img-title">${post.title}</span>
-                            </figcaption>
-                        </figure>
-                    </div>
-                `
-
+<div class="card">
+    <img src="./img/pin.svg" alt="pin image" class="pin">
+    <figure>
+        <img src="${post.url}" alt="blog image" class="image"> 
+        <figcaption>
+            <span class="img-date">${post.date}</span>
+            <span class="img-title">${post.title}</span>
+        </figcaption>
+    </figure>
+</div>
+`;
 });
 
 //output

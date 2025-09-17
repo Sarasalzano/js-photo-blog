@@ -25,14 +25,13 @@ header {
 }
 
 /* MAIN */
-
 .image {
     max-width: 100%;
     padding-bottom: 10px;
     
 }
 
-.main-row {
+.cards-container {
     /* DEBUG 
     background-color: aquamarine;*/
     min-height: 100px;
@@ -62,7 +61,7 @@ header {
 
 .img-date {
     font-family:"Sometype Mono", monospace;
-    color: grey;
+    color: rgb(102, 102, 102);
 }
 
 .img-title {
@@ -85,7 +84,7 @@ header {
         width: 35%;
     }
 
-    .main-row {
+    .cards-container {
         width: 100%;
     }
 }
@@ -95,6 +94,4 @@ header {
   .card {
         width: 50%;
     }
-
-
 }
