@@ -59,6 +59,13 @@ header {
     box-shadow: 3px 3px 2px #A0672F;
 }
 
+.card:hover {
+    cursor: pointer;
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 4px 4px 4px 1px #A0672F;
+    z-index: 1;
+    transition: linear 0.2s;
+}
 .pin {
     position: absolute;
     top: 5px;
@@ -107,9 +114,6 @@ header {
     max-width: 100%;
     padding-bottom: 10px;
 }
-
-
-
 
 
 /* PARTE HOVER */
