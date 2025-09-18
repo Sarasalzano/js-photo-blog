@@ -51,8 +51,8 @@ const cardImg = document.querySelectorAll(".image");
 cards.forEach(cardItem => {
     cardItem.addEventListener("click", () => {
     overlayDisplay.classList.remove("d-none");
-  
-    });
+    overlayImg.src = cardItem.querySelector(".image").src
+});
 });
 
 //faccio scomparire la schermata al click del bottone
