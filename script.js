@@ -35,4 +35,25 @@ postsString += `
 //output
 output.innerHTML = postsString;
 
+//seleziono tutte le card
+const cards = document.querySelectorAll(".card");
+//seleziono l'overlay
+const overlayDisplay = document.getElementById("overlay");
+//seleziono il bottone
+const bottone = document.querySelector("button");
+
+//faccio comparire la schermata di overlay al click di una card
+cards.forEach(cardItem => {
+    cardItem.addEventListener("click", () => {
+        overlayDisplay.classList.remove("d-none");
+    })
+});
+
+//faccio scomparire la schermata al click del bottone
+bottone.addEventListener("click", () => {
+    overlayDisplay.classList.add("d-none");
+})
+
+
+
 });
