@@ -37,22 +37,18 @@ postsString += `
 //output per mostrare in pagina
 output.innerHTML = postsString;
 
-
-//seleziono tutte le card
+//seleziono elementi di output per procedere all'overlay
 const cards = document.querySelectorAll(".card");
-//seleziono l'overlay
 const overlayDisplay = document.getElementById("overlay");
-//seleziono il bottone
 const bottone = document.querySelector("button");
-//selezione immagine overlay
 const overlayImg = document.querySelector(".big-image");
-//seleziono immagine delle card
 const cardImg = document.querySelectorAll(".image");
 
 //faccio comparire la schermata di overlay al click di una card
 cards.forEach(cardItem => {
     cardItem.addEventListener("click", () => {
     overlayDisplay.classList.remove("d-none");
+    //collego ogni card all'overlay
     overlayImg.src = cardItem.querySelector(".image").src
 });
 });
