@@ -1,5 +1,5 @@
-//selezione degli elementi di output
-const output = document.querySelector(".cards-container");
+//seleziono elemento di output
+const output = document.querySelector(".card-row");
 //console.log(output);
 
 //setto variabile dell'endpoint
@@ -8,13 +8,15 @@ const endPoint = "https://lanciweb.github.io/demo/api/pictures/";
 
 //chiamata ajax a api
 axios.get(endPoint).then((response) => {
-//estrapolazione dati
+
+//estrapolazione dati utili
 const posts = response.data;
 //console.log(posts);
 
-//creo variabile di accumulo
+//creo variabile di accumulo per visualizzare tutte le card
 let postsString = "";
 
+//estraggo il singolo post
 posts.forEach(post => {
 console.log(post);
 
@@ -22,7 +24,7 @@ postsString += `
 <div class="card">
     <img src="./img/pin.svg" alt="pin image" class="pin">
     <figure>
-        <img src="${post.url}" alt="blog image" class="image"> 
+        <img src="${post.url}" alt="${post.title}" class="image"> 
         <figcaption>
             <span class="img-date">${post.date}</span>
             <span class="img-title">${post.title}</span>
@@ -32,8 +34,9 @@ postsString += `
 `;
 });
 
-//output
+//output per mostrare in pagina
 output.innerHTML = postsString;
+
 
 //seleziono tutte le card
 const cards = document.querySelectorAll(".card");
@@ -45,7 +48,6 @@ const bottone = document.querySelector("button");
 const overlayImg = document.querySelector(".big-image");
 //seleziono immagine delle card
 const cardImg = document.querySelectorAll(".image");
-
 
 //faccio comparire la schermata di overlay al click di una card
 cards.forEach(cardItem => {
